@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="tiendainformatica">
+		<class>es.iespuertodelacruz.ahmrlh.tiendainformatica.entitites.Categoria</class>
+		<class>es.iespuertodelacruz.ahmrlh.tiendainformatica.entitites.Estado</class>
+		<class>es.iespuertodelacruz.ahmrlh.tiendainformatica.entitites.Factura</class>
+		<class>es.iespuertodelacruz.ahmrlh.tiendainformatica.entitites.Pedido</class>
+		<class>es.iespuertodelacruz.ahmrlh.tiendainformatica.entitites.Producto</class>
+		<class>es.iespuertodelacruz.ahmrlh.tiendainformatica.entitites.Rol</class>
+		<class>es.iespuertodelacruz.ahmrlh.tiendainformatica.entitites.Usuario</class>
+		<!-- <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+	<properties>
+	 <property name="hibernate.show_sql" value="true" />
+	 <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+	 <property name="javax.persistence.jdbc.driver"	value="com.mysql.cj.jdbc.Driver" />
+	 <property name="javax.persistence.jdbc.user" value="root" />
+	 <property name="javax.persistence.jdbc.password" value="1q2w3e4r"/>
+	 <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tiendainformatica" />
+	 
+	 </properties>		
+	</persistence-unit>
+</persistence>
